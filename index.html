@@ -1,0 +1,92 @@
+<html> 
+  <head>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <title> Toronto Maple Leafs Official Website </title>
+    <script>
+      function banner(){ 
+        var text = confirm("This Website Wants to Take You to Another Great Place Dedicated to Your Favorite Hockey Team!"); 
+        return text; 
+      }
+      function answer(){
+        var radio = document.getElementsByName("TML Trivia");
+        var selection = false;
+        var message = "";
+        for( var i = 0; i < radio.length; i++) {
+          if(radio[i].value == "Johnny Bower" && radio[i].checked == true) { 
+            selection = true; 
+          } //end if statement 
+        } //end for loop
+        if(selection == true) {
+          message = message + "<b><p style='color:green'>Way To Go!</p></b>"; 
+        } else { 
+          message = message + "<b><p style='color:red'>Sorry. Try Again.</p></b>"; 
+        }
+          document.getElementById("response").innerHTML = message;
+      } //end function answer
+    </script>
+  </head> 
+  <body style="border:5px double blue;padding:10px" id="background">
+    <a href="https://www.nhl.com/mapleleafs/" onclick="return banner()">
+      <header>
+        <img style="position:absolute; top:12.5px; left: 375px; width:60px; height:60px" src="https://www.carid.com/ic/knockout-decals/hitch-covers/972h_1.jpg">
+        <img style="position:absolute; top:12.5px; left: 1150px; width:60px; height:60px" src="https://www.carid.com/ic/knockout-decals/hitch-covers/972h_1.jpg">
+      </header>
+    </a>
+    <nav style="position:absolute; top: 15px; left: 0px">
+      <ul id="navmenu">
+        <li class="navitem"> <a class="homeLink" href="index.html"> Home </a> </li>
+        <li class="navitem"> <a class="standingsLink" href="standings.html"> Standings </a> </li>
+        <li class="navitem"> <a class="playersLink" href="players.html"> Players </a> </li>
+      </ul>
+    </nav>
+    <div id="rightside">
+      <p> Copyright of the NHL </p>
+    </div>
+    <div id="leftside">
+      <p> Brought to you by Tim Hortons and Dunkin' Donuts </p>
+    </div>
+    <h1> The REAL Toronto Maple Leafs Official Website! </h1>
+    <center>
+      <p class="paragraph"> All other so-called "Official Websites" are <span class="wrap-text"><b>FAKE</b></span>! Do not trust them! This is the home website of the <u>GREATEST</u> hockey team of all time, and we <i>LOVE</i> support from our fans! Thank you all so much for your contributions! </p>
+      <h3> Toronto Maple Leafs Fast Facts </h3>
+    </center>
+    <div class="wrap-list">
+      <ol>
+        <li class="listitem"> The Toronto Maple Leafs team was formed in 1917. They were originally named the Toronto Blue Shirts, but changed their name to the Toronto Arenas. In 1919, they underwent their second name change to become the Toronto St. Patricks, and in 1926, they changed it a third time, creating the famous moniker that we all know and love today. </li>
+        <li class="listitem"> The Toronto Maple Leafs was one of the six original hockey teams in the NHL. </li>
+        <li class="listitem"> The Toronto Maple Leafs won their first Stanley Cup at the end of their first season, but this title is not counted due to the team having a different name back then. </li>
+      </ol>
+    </div>
+    <center>
+      <div class="wrap-trivia">
+        <h3> Toronto Maple Leafs Trivia </h3>
+        <p> Which Leafs goalie was nicknamed "The China Wall"? </p>
+        <form>
+          <div id="response"></div>
+          <input type="radio" name="TML Trivia" value="Johnny Bower"> Johnny Bower <br>
+          <input type="radio" name="TML Trivia" value="Bruce Gamble"> Bruce Gamble <br>
+          <input type="radio" name="TML Trivia" value="Terry Sawchuk"> Terry Sawchuk <br>
+          <input type="radio" name="TML Trivia" value="Al Smith"> Al Smith <br>
+          <input type="button" value="Submit" id="button" onclick="answer()">
+        </form>
+      </div>
+    </center>
+    <img style="position:absolute; top:325px; left: 60px; width:640px; height:360px" src="https://i.ytimg.com/vi/Dr_PSc2OOFw/maxresdefault.jpg">
+    <p style="position:absolute; top:675px; left: 248px"> Matthews, Nylander, Marner - The Big Three! </p>
+    <img style="position:absolute; top:325px; left: 900px; width:640px; height:360px" src="https://nhl.bamcontent.com/images/photos/285171070/1136x640/cut.jpeg">
+    <p style="position:absolute; top:675px; left: 1065px"> Dave Keon - The Greatest Player in Leafs History! </p>
+    <img style="position:absolute; top:700px; left:100px; width:1400px; height:50px" src="https://maxcdn.icons8.com/Share/icon/Editing//horizontal_line1600.png">
+    <p style="position:absolute; top:728px; left: 550px"> Official Content Manager: Matthew Delis <a href="http://shop.nhl.com/Toronto_Maple_Leafs_Gear/browse/source/google-ak1900nhl?utm_campaign=NHL_GKs_Toronto+Maple+Leafs_USA|336413088&utm_medium=ppc&ks_id=6220_kw4739932&utm_term=%2Btoronto%20%2Bmaple%20%2Bleaf%20%2Bmerchandise&matchtype=b&utm_source=g&target=kwd-36522669262&pcrid=121301203968&adposition=1t1" target="_blank"> (Click Here for his Favorite Website) </a> </p>
+    <footer>
+      <img style="position:absolute; top: 726px; left: 486px; width:55px; height:55px" src="https://www.carid.com/ic/knockout-decals/hitch-covers/972h_1.jpg">
+      <img style="position:absolute; top: 726px; left: 1070px; width:55px; height:55px" src="https://www.carid.com/ic/knockout-decals/hitch-covers/972h_1.jpg">
+    </footer>
+    <video style="position:absolute; top: 185px; left: 1150px;" width="215" height="125" src="https://drive.google.com/uc?export=download&id=1cpvz_NKsGKdBe6-CDY9Oe-JTYS9DhlRg"controls allowfullscreen>
+      Your browser does not support HTML5 video.
+    </video>
+    <audio style="position:absolute; top: 240px; left: 100px; "width="300" height="150" controls>
+      <source src="https://drive.google.com/uc?export=download&id=1KgBwu-zcjGBPcAyJJZ3NsSiDWNaQphFs" type="audio/mpeg">
+        Your browser does not support HTML 5 audio.
+    </audio>
+  </body>
+</html>

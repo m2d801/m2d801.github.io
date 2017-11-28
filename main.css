@@ -1,0 +1,105 @@
+p {
+	color:black;
+	font-size:16px;
+}
+.listitem {
+	color:black;
+	font-size:16px;
+}
+.paragraph {
+	color:black;
+	font-size:16px;
+}
+#background {
+	background-color:white;
+}
+#button {
+	width:58px;
+	height:22px;
+	color:black;
+	background-color:white;
+	border-radius:15px;
+	margin:0em;
+}
+header {
+	height:0px;
+	width:0px;
+	border:0px;
+	background-color:#ffffff;
+	margin-bottom:0;
+}
+footer {
+	height:0px;
+	width:0px;
+	border:0px;
+	background-color:#ffffff;
+}
+.wrap-trivia {
+	height:0px;
+	width:250px;
+	border:0px;
+	padding:0px;
+}
+.wrap-list {
+	height:75px;
+	width:1550px;
+	border:0px;
+}
+.wrap-text {
+	color:#000000;
+	font-size:16px;
+}
+.navitem {
+	list-style-type: none;
+	display: inline;
+	padding-right: 1.5em;
+}
+#navmenu {
+	width:250px;
+	height:30px;
+	margin:auto;
+}
+.homeLink:link {
+	color:blue;
+}
+.homeLink:visited {
+	color:purple;
+}
+.homeLink:hover {
+	color:green;
+}
+.homeLink:active {
+	color:orange;
+}
+.playersLink:link {
+	color:blue;
+}
+.playersLink:visited {
+	color:purple;
+}
+.playersLink:hover {
+	color:green;
+}
+.playersLink:active {
+	color:orange;
+}
+.standingsLink:link {
+	color:blue;
+}
+.standingsLink:visited {
+	color:purple;
+}
+.standingsLink:hover {
+	color:green;
+}
+.standingsLink:active {
+	color:orange;
+}
+#rightside {
+	float:right;
+	width:150px;
+}
+#leftside {
+	float:left;
+	width:425px;
+}
